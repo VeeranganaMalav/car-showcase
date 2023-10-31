@@ -6,7 +6,11 @@ import CustomButton from "./CustomButton";
 const Hero = () => {
 
     const handleScroll = () => {
+        const nextSection = document.getElementById("discover");
 
+        if (nextSection) {
+            nextSection.scrollIntoView({ behavior: "smooth" });
+        }
     }
 
     return (
@@ -29,7 +33,7 @@ const Hero = () => {
                 </div>
 
                 <div className="hero__image-overlay">
-                        
+
                 </div>
             </div>
         </div>
